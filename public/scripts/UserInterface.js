@@ -17,6 +17,7 @@ export default class UserInterface {
             this.playerChoice(1);
             this.player.num = 1;
             document.getElementById('choice').classList.add('hide')
+            document.getElementById('canvas').classList.remove('hide')
             document.getElementById('canvas').classList.add('blue')
         })
         document.getElementById('joueur2').addEventListener('click',()=>{
@@ -24,6 +25,7 @@ export default class UserInterface {
             this.playerChoice(2);
             this.player.num = 2;
             document.getElementById('choice').classList.add('hide')
+            document.getElementById('canvas').classList.remove('hide')
             document.getElementById('canvas').classList.add('red')
         })
     }
